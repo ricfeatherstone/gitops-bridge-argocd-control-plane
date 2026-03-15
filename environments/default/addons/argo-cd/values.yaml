@@ -51,12 +51,12 @@ server:
       annotations:
         prometheus.io/scrape: true
   service:
-    type: LoadBalancer
-    annotations:
-      service.beta.kubernetes.io/aws-load-balancer-name: argocd
-      service.beta.kubernetes.io/aws-load-balancer-type: external
-      service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: instance
-      service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+#    type: LoadBalancer
+#    annotations:
+#      service.beta.kubernetes.io/aws-load-balancer-name: argocd
+#      service.beta.kubernetes.io/aws-load-balancer-type: external
+#      service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: instance
+#      service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
     ports:
       - name: http
         port: 80
